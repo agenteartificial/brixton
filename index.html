@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="dark snap-y snap-mandatory scroll-smooth" lang="es" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>BRIXTON EPK Oficial - Versión Español</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#D4AF37", "primary-hover": "#b5952f",
+                        "accent-red": "#C8102E", "background-light": "#f8f7f6",
+                        "background-dark": "#181611",
+                        "surface-dark": "#221c10",
+                        "london-grey": "#2C3539",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .text-shadow-glow {
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        .bg-london-gradient {
+            background: linear-gradient(to bottom, rgba(24, 22, 17, 0.6) 0%, rgba(24, 22, 17, 0.6) 100%);
+        }
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+        html {
+            scroll-behavior: smooth;
+        }
+    }
+</style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 overflow-x-hidden">
+    <header
+        class="absolute top-0 left-0 right-0 z-50 flex items-center justify-center border-b border-solid border-slate-200 dark:border-slate-800 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md px-6 py-4 lg:px-20">
+        <img src="logo.png" alt="BRIXTON Logo" class="h-12 w-auto object-contain">
+    </header>
+    <section class="relative h-screen w-full flex items-center justify-center pt-16 snap-start overflow-hidden">
+        <div class="absolute inset-0 z-0 overflow-hidden bg-black pointer-events-none">
+            <iframe
+                src="https://iframe.mediadelivery.net/embed/608390/bb84c03a-8a22-4f04-b398-a518e09440b0?autoplay=true&loop=true&muted=true&preload=true&responsive=true"
+                class="absolute top-1/2 left-1/2 w-[300vw] h-[168.75vw] lg:w-[100vw] lg:h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                loading="lazy" style="border:0;"
+                allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+                allowfullscreen="true"></iframe>
+            <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+        <div
+            class="relative z-10 flex flex-col items-center justify-center gap-8 text-center px-4 max-w-5xl mx-auto mt-10">
+            <div class="flex flex-col gap-2">
+                <h2 class="text-primary font-bold tracking-[0.2em] text-sm md:text-base uppercase animate-fade-in-up">DJ
+                    • PRODUCTOR • SAXOFONISTA</h2>
+                <h1
+                    class="text-white text-6xl md:text-8xl lg:text-[9rem] font-black leading-none tracking-tighter drop-shadow-2xl text-shadow-glow">
+                    BRIXTON
+                </h1>
+                <p class="text-slate-300 text-lg md:text-xl font-light tracking-wide mt-4 max-w-2xl mx-auto">
+                    Fusionando el sonido underground de Medellín con la elegancia de Londres.
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                <button
+                    class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-full h-12 px-8 bg-primary hover:bg-primary-hover text-black text-base font-bold tracking-wide transition-transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                    <span class="mr-2 material-symbols-outlined text-[20px]">play_circle</span>
+                    Escuchar Ahora
+                </button>
+                <button
+                    class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-full h-12 px-8 border-2 border-white text-white hover:bg-white hover:text-black text-base font-bold tracking-wide transition-all hover:scale-105">
+                    Contacto Booking
+                </button>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-slate-400">
+            <span class="material-symbols-outlined !text-4xl">keyboard_arrow_down</span>
+        </div>
+    </section>
+    <section
+        class="h-screen w-full flex flex-col items-center justify-center py-12 md:py-20 lg:py-24 px-6 md:px-12 lg:px-24 bg-[#262626] relative overflow-hidden snap-start">
+        <div
+            class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] opacity-10 mix-blend-overlay">
+        </div>
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-black/20 skew-x-12 translate-x-1/3"></div>
+        <div
+            class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center relative z-10 w-full">
+            <div class="flex flex-col gap-8">
+                <div class="flex items-center gap-4">
+                    <div class="h-[2px] w-12 bg-accent-red"></div>
+                    <span class="text-primary font-bold uppercase tracking-widest text-sm">EL ARTISTA</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                    De las Raíces al<br />
+                    <span class="text-primary">Ritmo y Metal</span>
+                </h2>
+                <div class="space-y-6 text-slate-300 text-lg leading-relaxed font-light">
+                    <p>
+                        Damián Santiago Ortega Lopez, conocido en la escena como BRIXTON, es un artista polifacético
+                        nacido en Medellín. Su propuesta musical rompe los esquemas tradicionales: es DJ, productor,
+                        saxofonista en vivo y barbero profesional. Esta mezcla única le permite fusionar la estética
+                        visual y la precisión con la elegancia de los instrumentos, creando sets electrónicos llenos de
+                        ritmo y energía pura.
+                    </p>
+                </div>
+
+            </div>
+            <div class="relative group w-full max-w-[260px] sm:max-w-[300px] md:max-w-sm lg:max-w-md mx-auto">
+                <div
+                    class="absolute -inset-4 bg-gradient-to-tr from-primary/30 to-accent-red/30 rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div
+                    class="relative w-full aspect-[4/5] bg-surface-dark overflow-hidden shadow-2xl border border-slate-700 rounded-[15px]">
+                    <div class="absolute inset-0 bg-cover bg-top" data-alt="Brixton standing in street with saxophone"
+                        style="background-image: url('brixton-bio.jpeg');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="relative h-screen w-full overflow-hidden flex items-center justify-center bg-fixed bg-cover bg-center snap-start"
+        data-alt="Iconic Red London telephone booth on a rainy street"
+        style="background-image: url('6.04.56 PM.jpeg');">
+        <div class="absolute inset-0 bg-black/50 mix-blend-multiply"></div>
+        <div
+            class="relative z-10 text-center px-4 py-12 bg-black/40 backdrop-blur-sm rounded-xl border border-white/10 max-w-3xl mx-4">
+            <div class="mb-6 mx-auto w-16 h-1 bg-accent-red"></div>
+            <h2 class="text-white text-3xl md:text-5xl font-bold tracking-tight mb-4">"Una Clase Maestra de Atmósfera"
+            </h2>
+            <p class="text-primary text-xl md:text-2xl font-serif italic">- MixMag Review</p>
+        </div>
+    </section>
+    <section class="relative h-screen w-full bg-black snap-start overflow-hidden group">
+        <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none bg-black">
+            <!-- We use an ID to control this specific iframe from JS -->
+            <iframe id="mosVideo"
+                src="https://iframe.mediadelivery.net/embed/608390/9c113004-0770-4200-85a5-52a1cc3fb3b4?autoplay=true&loop=true&muted=true&preload=true&responsive=true&controls=false"
+                class="absolute top-1/2 left-1/2 w-[300vw] h-[168.75vw] lg:w-[100vw] lg:h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                style="border:0;" loading="lazy"
+                allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+                allowfullscreen="true"></iframe>
+        </div>
+        <div
+            class="absolute inset-0 z-10 bg-gradient-to-t from-black via-transparent to-transparent opacity-90 pointer-events-none">
+        </div>
+
+        <!-- Sound Toggle Button -->
+        <button id="mosSoundToggle" onclick="toggleMosSound(event)"
+            class="absolute z-20 top-24 right-6 w-14 h-14 rounded-full bg-black/60 border border-white/20 flex items-center justify-center text-white backdrop-blur-md hover:bg-black/80 transition-colors cursor-pointer group/btn shadow-2xl"
+            aria-label="Unmute video">
+            <span class="material-symbols-outlined !text-3xl group-hover/btn:scale-110 transition-transform"
+                id="mosSoundIcon">volume_off</span>
+        </button>
+
+        <div class="absolute z-30 bottom-16 left-6 p-4 pointer-events-none max-w-xl">
+            <span
+                class="bg-accent-red text-white text-xs font-bold px-3 py-1.5 rounded-sm uppercase tracking-widest mb-4 inline-block shadow-lg">Live
+                Set</span>
+            <h4
+                class="text-white font-black text-5xl md:text-7xl tracking-tighter drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
+                Ministry of Sound</h4>
+            <div class="mt-4 flex items-center gap-2 text-primary">
+                <span class="material-symbols-outlined text-sm">location_on</span>
+                <span class="font-bold tracking-wider uppercase text-sm">London, UK</span>
+            </div>
+        </div>
+    </section>
+    <section class="h-screen w-full flex flex-col justify-center py-24 px-4 bg-surface-dark snap-start overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12 px-2 border-b border-slate-800 pb-6">
+                <div>
+                    <h3 class="text-accent-red font-bold uppercase tracking-widest text-sm mb-2">EXPERIENCIA VISUAL</h3>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">En Vivo y Estudio</h2>
+                </div>
+                <a class="hidden md:flex items-center gap-2 text-primary hover:text-white transition-colors uppercase text-sm font-bold tracking-wider"
+                    href="#">
+                    <span>Ver Galería</span>
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <div class="group relative overflow-hidden rounded-sm aspect-square border border-slate-800">
+                    <div class="absolute inset-0 bg-cover bg-top transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Brixton standing full body" style="background-image: url('gallery-1.jpg');">
+                    </div>
+                    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+                </div>
+                <div class="group relative overflow-hidden rounded-sm aspect-square border border-slate-800">
+                    <div class="absolute inset-0 bg-cover bg-top transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Brixton performing as DJ" style="background-image: url('gallery-2.jpg');">
+                    </div>
+                    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-sm aspect-video lg:col-span-2 border border-slate-800">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Crowd hands in the air at a concert"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQZrkk3DX5gVQXzc_WM8Fs1Kvm7aGWugQP0UVxSiQd-mI-FMRNqBqTIfQNX4RL1iWP240uIiOoz9NHOp1ptdrocOYKnSG945_VA6yx7aD-d-2RwYnC_yZhVR81EYa_ttm65Y1L3hvQQHNvmGcBoAS3Mf927K7_qbyyEM60PSPmVQ5vmzG0FbaDsEhI0IvCvsLCL92cgUMYjn5HATD85FGj9lDJPyJ_ZifVFExsjO-RQnFfN7kIbdMU7jWIuP-MLe7jKStneDu5rYQ");'>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
+                        <h4 class="text-white font-bold text-2xl">Electric Brixton</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="h-screen w-full flex flex-col justify-center py-20 px-4 bg-[#1a1a1a] border-t border-slate-800 snap-start overflow-hidden">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="material-symbols-outlined text-primary !text-5xl mb-4">settings_input_component</span>
+                <h2 class="text-3xl font-bold text-white">Requerimientos Técnicos</h2>
+                <p class="text-slate-400 mt-2">Configuración esencial para un rendimiento óptimo</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="bg-[#1a1a1a] border border-slate-700 p-8 rounded-lg relative overflow-hidden group hover:border-primary/50 transition-colors shadow-xl">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-accent-red"></div>
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">speaker_group</span>
+                        Equipamiento DJ
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <span class="material-symbols-outlined text-sm text-accent-red">check_circle</span>
+                            2x Pioneer CDJ-3000 o CDJ-2000NXS2 (Enlazados / Link).
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <span class="material-symbols-outlined text-sm text-accent-red">check_circle</span>
+                            1x Pioneer DJM-900NXS2 o V10 Mixer.
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <span class="material-symbols-outlined text-sm text-accent-red">check_circle</span>
+                            2x Monitores de Cabina (Con control de volumen independiente).
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-[#1a1a1a] border border-slate-700 p-8 rounded-lg relative overflow-hidden group hover:border-primary/50 transition-colors shadow-xl">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">mic_external_on</span>
+                        Saxofón en Vivo y Audio
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+                            1x Micrófono inalámbrico de clip (Shure/Sennheiser) o micrófono de base con buen rango para
+                            el saxofón.
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+                            1x Canal libre en la consola o mixer principal para conectar el receptor del saxofón.
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-300">
+                            <span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+                            Monitoreo claro en cabina para la referencia del instrumento.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer
+        class="h-screen w-full flex flex-col justify-center bg-black pt-20 pb-10 px-6 border-t border-slate-800 snap-start overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-10">
+            <div class="flex flex-col gap-6 items-center">
+                <h2 class="text-4xl md:text-5xl font-black text-white tracking-tight">¿LISTO PARA RESERVAR?</h2>
+                <p class="text-slate-400 text-lg max-w-xl">
+                    Para consultas de prensa, disponibilidad de fechas y colaboraciones.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 w-full justify-center mt-4">
+                    <a href="https://wa.me/573206641532?text=Hola%20Brixton,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n."
+                        target="_blank"
+                        class="flex items-center justify-center gap-3 rounded-full h-14 px-10 bg-accent-red hover:bg-white hover:text-accent-red text-white text-lg font-bold tracking-wide shadow-lg hover:shadow-accent-red/20 transition-all transform hover:-translate-y-1">
+                        <span class="material-symbols-outlined">chat</span>
+                        Contactar Ahora
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1iBneJrV8cLMRfpQ3PLABJKn2E8EV2BXG?usp=sharing"
+                        target="_blank"
+                        class="flex items-center justify-center gap-3 rounded-full h-14 px-10 bg-gradient-to-r from-primary to-[#cf9524] hover:from-[#cf9524] hover:to-primary text-black text-lg font-bold tracking-wide shadow-lg hover:shadow-primary/20 transition-all transform hover:-translate-y-1">
+                        <span class="material-symbols-outlined">download</span>
+                        Descargar Press Kit
+                    </a>
+                </div>
+            </div>
+            <div class="w-full h-px bg-slate-800 my-8"></div>
+            <div class="flex flex-col md:flex-row justify-between items-center w-full gap-6">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <img alt="Brixton Logo" class="h-10 w-auto" src="logo.png" />
+                </div>
+                <!-- Social Networks -->
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+                    <a class="text-slate-400 hover:text-accent-red transition-colors" href="#" aria-label="Instagram">
+                        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path clip-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.373c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a class="text-slate-400 hover:text-accent-red transition-colors" href="#" aria-label="TikTok">
+                        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z" />
+                        </svg>
+                    </a>
+                    <a class="text-slate-400 hover:text-accent-red transition-colors" href="#" aria-label="YouTube">
+                        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M21.582 6.186a2.6 2.6 0 0 0-1.838-1.85C18.122 3.91 12 3.91 12 3.91s-6.122 0-7.744.426a2.6 2.6 0 0 0-1.838 1.85C2 7.828 2 12 2 12s0 4.172.418 5.814a2.6 2.6 0 0 0 1.838 1.85C5.878 20.09 12 20.09 12 20.09s6.122 0 7.744-.426a2.6 2.6 0 0 0 1.838-1.85C22 16.172 22 12 22 12s0-4.172-.418-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                    <a class="text-slate-400 hover:text-accent-red transition-colors" href="#" aria-label="Facebook">
+                        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a class="text-slate-400 hover:text-accent-red transition-colors" href="#" aria-label="Spotify">
+                        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.586 14.424c-.18.295-.563.387-.857.207-2.35-1.434-5.308-1.758-8.788-.962-.335.077-.67-.133-.746-.468-.077-.335.132-.67.467-.746 3.832-.876 7.124-.498 9.717.912.293.18.386.563.206.857zm1.226-2.726c-.225.367-.704.482-1.07.257-2.687-1.652-6.785-2.13-9.965-1.166-.413.126-.848-.112-.974-.525-.125-.413.112-.848.525-.974 3.615-1.096 8.163-.564 11.227 1.32.367.226.48.705.257 1.088zm.13-2.887c-3.22-1.91-8.528-2.088-11.597-1.155-.477.145-.99-.12-1.135-.597-.145-.477.12-.99.598-1.135 3.528-1.073 9.4-0.864 13.085 1.325.425.25.564.795.314 1.22-.25.425-.796.563-1.22.313z" />
+                        </svg>
+                    </a>
+                    <a class="text-slate-400 hover:text-accent-red transition-colors"
+                        href="https://wa.me/573206641532?text=Hola%20Brixton,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n."
+                        target="_blank" aria-label="WhatsApp">
+                        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12.031 2.012A9.957 9.957 0 0 0 2.052 11.99a9.932 9.932 0 0 0 1.332 4.97L2 22l5.163-1.353a9.92 9.92 0 0 0 4.868 1.258h.004c5.49 0 9.958-4.47 9.958-9.96a9.931 9.931 0 0 0-2.915-7.05A9.917 9.917 0 0 0 12.031 2.012zm0 16.208a8.232 8.232 0 0 1-4.205-1.15l-.3-.18-3.125.82.834-3.045-.197-.314A8.204 8.204 0 0 1 3.737 11.99c0-4.568 3.717-8.284 8.294-8.284 2.215 0 4.296.862 5.86 2.427a8.234 8.234 0 0 1 2.428 5.858c0 4.568-3.716 8.285-8.288 8.285zm4.551-6.19c-.25-.125-1.478-.73-1.706-.814-.23-.083-.396-.125-.563.125-.167.25-.644.814-.79 9.8-.146.166-.293.187-.543.063a6.762 6.762 0 0 1-1.996-1.23c-.76-.648-1.272-1.45-1.418-1.7-.146-.25-.015-.386.11-.51.112-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.02-.438-.063-.125-.563-1.355-.77-1.855-.203-.487-.408-.42-.563-.428l-.48-.008c-.167 0-.437.063-.666.313-.23.25-.875.855-.875 2.083s.896 2.417 1.022 2.583c.125.167 1.76 2.688 4.264 3.77 1.942.84 2.37.668 2.784.626.417-.042 1.353-.553 1.54-1.084.188-.532.188-.98.13-1.084-.057-.105-.224-.167-.474-.292z" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- Copyright -->
+                <div class="text-slate-500 text-sm font-medium">
+                    © 2026 BRIXTON Music ON.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Ministry of Sound Video Sound Toggle Logic
+        let isMosMuted = true;
+        const mosIframeUrl = "https://iframe.mediadelivery.net/embed/608390/9c113004-0770-4200-85a5-52a1cc3fb3b4?autoplay=true&loop=true&preload=true&responsive=true&controls=false";
+
+        function toggleMosSound(event) {
+            // Prevent any other click events on the card
+            if (event) {
+                event.stopPropagation();
+                event.preventDefault();
+            }
+
+            const video = document.getElementById('mosVideo');
+            const icon = document.getElementById('mosSoundIcon');
+
+            isMosMuted = !isMosMuted;
+
+            // Re-assign the src with the updated muted parameter to force Bunny.net player to update state
+            video.src = `${mosIframeUrl}&muted=${isMosMuted}`;
+
+            // Update Icon
+            if (isMosMuted) {
+                icon.textContent = 'volume_off';
+                icon.classList.remove('text-primary');
+            } else {
+                icon.textContent = 'volume_up';
+                icon.classList.add('text-primary');
+            }
+        }
+    </script>
+</body>
+
+</html>
