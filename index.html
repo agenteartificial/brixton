@@ -154,7 +154,7 @@
             <p class="text-primary text-xl md:text-2xl font-serif italic">- MixMag Review</p>
         </div>
     </section>
-    <section class="relative h-screen w-full bg-black snap-start overflow-hidden group">
+    <section id="video-section" class="relative h-screen w-full bg-black snap-start overflow-hidden group">
         <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none bg-black">
             <!-- We use an ID to control this specific iframe from JS -->
             <iframe id="mosVideo"
@@ -378,6 +378,23 @@
             const iframe = document.getElementById('mosVideo');
             if (window.playerjs) {
                 mosPlayer = new playerjs.Player(iframe);
+
+                // Intersection Observer to auto-play when visible and pause when not
+                const videoSection = document.getElementById('video-section');
+                if (videoSection) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                // Play when section comes into view
+                                mosPlayer.play();
+                            } else {
+                                // Pause when section leaves view to ensure it re-triggers play when returning
+                                mosPlayer.pause();
+                            }
+                        });
+                    }, { threshold: 0.3 }); // Trigger when at least 30% of the section is visible
+                    observer.observe(videoSection);
+                }
             }
         });
 
