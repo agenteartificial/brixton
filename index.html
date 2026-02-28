@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script type="text/javascript" src="https://video.bunnycdn.com/playerv2/embed/player.js"></script>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -371,7 +372,14 @@
     <script>
         // Ministry of Sound Video Sound Toggle Logic
         let isMosMuted = true;
-        const mosIframeUrl = "https://iframe.mediadelivery.net/embed/608390/9c113004-0770-4200-85a5-52a1cc3fb3b4?autoplay=true&loop=true&preload=true&responsive=true&controls=false";
+        let mosPlayer = null;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const iframe = document.getElementById('mosVideo');
+            if (window.playerjs) {
+                mosPlayer = new playerjs.Player(iframe);
+            }
+        });
 
         function toggleMosSound(event) {
             // Prevent any other click events on the card
@@ -380,13 +388,27 @@
                 event.preventDefault();
             }
 
-            const video = document.getElementById('mosVideo');
             const icon = document.getElementById('mosSoundIcon');
 
             isMosMuted = !isMosMuted;
 
-            // Re-assign the src with the updated muted parameter to force Bunny.net player to update state
-            video.src = `${mosIframeUrl}&muted=${isMosMuted}`;
+            // Use Player.js API to toggle mute without reloading the iframe
+            if (mosPlayer) {
+                if (isMosMuted) {
+                    mosPlayer.mute();
+                } else {
+                    mosPlayer.unmute();
+                }
+            } else {
+                // Fallback using postMessage if player.js failed to load
+                const video = document.getElementById('mosVideo');
+                const msg = JSON.stringify({
+                    context: 'player.js',
+                    version: '0.0.11',
+                    method: isMosMuted ? 'mute' : 'unmute'
+                });
+                video.contentWindow.postMessage(msg, '*');
+            }
 
             // Update Icon
             if (isMosMuted) {
